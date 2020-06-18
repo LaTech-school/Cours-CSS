@@ -1,0 +1,26 @@
+/* Souligner les titres H2 */
+
+h2 {
+    text-decoration: underline;
+}
+
+
+/* Modifier la couleurs des liens */
+a {
+    color: #000000;
+}
+
+/* Espacer l'entete, le contenu et le pied de page de 60px; */
+.main-header {
+    margin-bottom: 60px;
+    border: 1px solid red;
+}
+.main-footer {
+    margin-top: 60px;
+    border: 1px solid red;
+}
+
+/* Les termes de la liste de définition en gras */
+dt {
+    font-weight: bold;
+}
