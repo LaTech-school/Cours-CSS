@@ -1,3 +1,8 @@
+* {
+    border: 10px dotted green !important;
+    padding: 10px;
+}
+
 /* Les selecteurs de type */
 p {
     border: 1px solid red;
@@ -33,7 +38,6 @@ blockquote {
 
 
 /* Sélecteur d'attributs */
-
 [type=text] {
     border: 3px dotted blue;
 }
@@ -42,4 +46,33 @@ blockquote {
 }
 input {
     background-color: greenyellow;
+}
+
+/* Les sélecteurs descendants */
+
+#selecteurDescedant {
+    border: 1px solid red;
+}
+
+/* les <div> descendants de #selecteurDescedant */
+#selecteurDescedant div {
+    border: 1px solid green;
+    margin: 10px;
+}
+
+/* les <span> descendants de #selecteurDescedant */
+#selecteurDescedant span {
+    border: 1px solid blue;
+    margin: 10px;
+}
+
+/* Les descendants direct ">"  */
+/* les <div> descendants de #selecteurDescedant */
+#selecteurDescedant > div {
+    border: 1px solid yellow;
+}
+
+
+#selecteurTest .enfant {
+    border: 1px solid red;
 }
