@@ -30,3 +30,16 @@ blockquote {
 #leParagraphe {
     text-decoration: underline;
 }
+
+
+/* Sélecteur d'attributs */
+
+[type=text] {
+    border: 3px dotted blue;
+}
+[type=email] {
+    border: 5px dashed cyan;
+}
+input {
+    background-color: greenyellow;
+}

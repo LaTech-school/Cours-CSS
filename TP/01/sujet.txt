@@ -1,0 +1,5 @@
+Feuille de style externe
+- Souligner les titres h2
+- Modifier la couleurs des textes des liens
+- Espacer l'entete, le contenu te le pied de page de 60px;
+- Les termes de la liste de définition en gras
