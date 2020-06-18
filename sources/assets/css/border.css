@@ -1,0 +1,44 @@
+div {
+    margin: 20px;
+    padding: 20px;
+}
+
+.border-1 {
+    border: 10px solid red;
+}
+
+.border-2 {
+    border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid yellow;
+}
+
+.border-3 {
+    border-width: 10px;
+    border-style: solid;
+    border-color: green;
+
+    margin: 100px 200px 500px 300px;
+}
+
+.border-4 {
+    border-top-width: 10px;
+    border-right-width: 50px;
+    border-bottom-width: 100px;
+    border-left-width: 200px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.border-5 {
+    border-width: 10px 50px 100px 200px; /* top right bottom left*/
+    border-style: solid;
+    border-color: blue;
+}
+
+.border-6 {
+    border-width: 10px 50px; /* top et bottom  puis  right et left */
+    border-style: solid;
+    border-color: pink;
+}
