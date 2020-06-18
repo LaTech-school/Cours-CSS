@@ -1,2 +1,5 @@
 Creer un carré (fond rouge) de 600px
 dans lequel vous ajouter un élément enfant rond (radius) (fond vert) de 100px de rayon
+
+
+Centrer le rond dans le carré (horizontalement et verticalement)
