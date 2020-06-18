@@ -49,3 +49,9 @@ git add *;
 git commit -m '-';
 git push;
 ```
+
+Uniquement pour le premier 'push'
+
+```shell
+git push --set-upstream origin master
+```
