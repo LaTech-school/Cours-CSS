@@ -1,0 +1,32 @@
+/* Les selecteurs de type */
+p {
+    border: 1px solid red;
+    margin: 0;
+}
+blockquote {
+    color: green;
+}
+
+
+/* Les selecteurs de classe */
+.pomme {
+    color: red;
+}
+.poire {
+    color: green;
+}
+.banane {
+    color: yellow;
+}
+
+
+/* Les selecteurs d'ID */
+#monPremierID {
+    text-decoration: underline;
+}
+#monSecondID {
+    font-size: 32px;
+}
+#leParagraphe {
+    text-decoration: underline;
+}
