@@ -16,7 +16,7 @@
     }
 }
 
-/* Breakpoint */
+/* Breakpoints */
 .breakpoint div { border: 3px solid red; }
 .breakpoint .small { border-color: green; display: none; }
 .breakpoint .medium { border-color: blue; display: none; }
