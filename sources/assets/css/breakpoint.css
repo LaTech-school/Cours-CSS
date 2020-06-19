@@ -1,0 +1,37 @@
+/* Media Queries */
+@media screen {
+    .media-queries .pourEcrans {
+        display: block;
+    }
+    .media-queries .pourImprimantes {
+        display: none;
+    }
+}
+@media print {
+    .media-queries .pourEcrans {
+        display: none;
+    }
+    .media-queries .pourImprimantes {
+        display: block;
+    }
+}
+
+/* Breakpoint */
+.breakpoint div { border: 3px solid red; }
+.breakpoint .small { border-color: green; display: none; }
+.breakpoint .medium { border-color: blue; display: none; }
+.breakpoint .large { border-color: pink; display: none; }
+
+@media (min-width: 600px) {
+    .breakpoint div { display: none; }
+    .breakpoint .small { display: block; }
+}
+@media (min-width: 800px) {
+    .breakpoint .small { display: none; }
+    .breakpoint .medium { display: block; }
+}
+@media (min-width: 1200px) {
+    .breakpoint .medium { display: none; }
+    .breakpoint .large { display: block; }
+}
+
