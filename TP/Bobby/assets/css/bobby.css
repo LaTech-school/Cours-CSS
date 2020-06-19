@@ -1,0 +1,208 @@
+/* reset des marges externe de tous les éléments HTML */
+* {
+    margin: 0;
+}
+
+/* La monde HTML de Bobby */
+html {
+    /* Le monde HTML de Bobby est tout gris :'( */
+    background-color: #c0c0c0;
+}
+
+/* L'espace de vie de Bobby */
+.espaceDeVieDeBobby {
+
+    /* Une boite toute blanche */
+    /* background-color: #ffffff; */
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,5,5,1) 19%, rgba(9,9,121,1) 35%, rgba(60,181,5,1) 64%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,5,5,1) 19%, rgba(9,9,121,1) 35%, rgba(60,181,5,1) 64%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,5,5,1) 19%, rgba(9,9,121,1) 35%, rgba(60,181,5,1) 64%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+
+    /* De 600 pixels de haut */
+    height: 600px;
+
+    /* Large comme le monde HTML de Bobby */
+    width: 100%;
+
+    /* La position relative de l'espace de vie de Bobby,
+    Permet à Bobby de vivre au centre de sa boite */
+    position: relative;
+}
+
+
+/* La tête de Bobby */
+.bobby {
+
+    /* Grosse tête de 200px x 200px */
+    height: 200px;
+    width: 200px;
+
+    /* Donne de la couleur à la tête de Bobby */
+    background-color: pink;
+
+    /* Bobby à une tête carré... mais elle devrait être ronde */
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+            border-radius: 50%;
+
+    /* Bobby est au centre de sa boite */
+    position: absolute; /* par rapport à sa boite */
+    left: 50%; /* La gauche de la tete est au centre de la boite */
+    top: 50%; /* Le haut de la tete est au centre de la boite */
+
+    /* Centrer le visage de Bobby */
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+/* La bouche de Bobby */
+.bobby .bouche {
+
+    /* Bobby a une grande bouche */
+    height: 20px;
+    width: 60px;
+
+    /* Bobby est Got... il a une bouche Noire */
+    background-color: rgba(0, 0, 0, .6);
+
+    /* La bouche doit être un bloc */
+    display: block;
+
+    /* Donne une forme d'elipse à la bouche */
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+            border-radius: 50%;
+    
+    /* Centrer la bouche de Bobby */
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+
+
+/* Le nez de Bobby */
+.bobby .nez {
+    /* Dimensions du nez */
+    height: 20px;
+    width: 20px;
+
+    /* Le nez est rond */
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+            border-radius: 50%;
+    
+    /* Bobby est un clown il a un nez rouge */
+    background-color: red;
+
+    /* La nez doit être un bloc */
+    display: block;
+
+    /* Position du nez */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+/* Les yeux de Bobby */
+/* Les yeux sont créés à partir du nez */
+
+.bobby .nez::before, 
+.bobby .nez::after {
+    content: "$"; /* permet de faire apparaitre l'élément */
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+
+    /* Dimensions des yeux */
+    height: 20px;
+    width: 20px;
+
+    /* Donne de la couleur */
+    background-color: #000000;
+
+    /* Les yeux sont des blocs */
+    display: block;
+
+    /* Position des yeux */
+    position: absolute;
+    top: -40px;
+
+    /* Les yeux sont rond */
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+            border-radius: 50%;
+
+    /* Bobby est un hypnotiseur */
+    animation-duration: 3s;
+    animation-name: hypno;
+    animation-iteration-count: infinite;
+}
+
+/* Oeil droit */
+.bobby .nez::before {
+    left: -30px;
+}
+
+/* Oeil gauche */
+.bobby .nez::after {
+    right: -30px;
+
+    /* Transition à appliquer sur l'état suivant */
+    -webkit-transition: all .2s;
+            transition: all .2s;
+}
+
+
+/* Quand on carresse le visage de Bobby (avec la souris) il fait un clin d'oeil */
+.bobby:hover {
+    /* Affiche une main sur le visage de Bobby */
+    cursor: pointer;
+}
+.bobby:hover .nez::after {
+    height: 0;
+    margin-top: 10px;
+    border-top: 1px solid #000000; 
+}
+
+/* Le beau chapeau de Bobby */
+.bobby::before {
+    content: "";
+    background-color: transparent;
+    background-image: url("../images/texture.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 50px;
+    width: 160px;
+
+    position: absolute;
+    top: -20px;
+    left: 50%;
+
+    margin-left: -130px;
+    border-bottom: 3px solid darkblue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+
+/* Bobby est Hypnotiseur !!!! Beware */
+@keyframes hypno {
+    0% {background-color: #000000;}
+    20% {background-color: #ff0000;}
+    40% {background-color: #33ff00;}
+    60% {background-color: #fbff00;}
+    80% {background-color: #427b85;}
+    100% {background-color: #000000;}
+}
