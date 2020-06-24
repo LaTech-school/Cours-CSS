@@ -1,7 +1,7 @@
-* {
+/* * {
     border: 10px dotted green !important;
     padding: 10px;
-}
+} */
 
 /* Les selecteurs de type */
 p {
@@ -75,4 +75,30 @@ input {
 
 #selecteurTest .enfant {
     border: 1px solid red;
+}
+
+
+/* Selecteur Adjacent */
+.la-liste li + li {
+    border-top: 1px solid black;
+}
+
+.la-liste-2 li {
+    border-bottom: 1px solid black;
+}
+.la-liste-2 li:last-child {
+    border: none;
+}
+
+
+/* Priorité des sélecteurs */
+
+#div {
+    border: 3px solid blue;
+}
+.div {
+    border: 3px solid green;
+}
+div {
+    border: 3px solid red;
 }

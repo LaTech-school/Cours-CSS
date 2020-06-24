@@ -1,4 +1,14 @@
 /* Media Queries */
+/* @media screen {} */
+/* @media print {} */
+/* @media speech {} */
+/* @media all {} */
+
+.media-queries .pourEcrans,
+.media-queries .pourImprimantes {
+    color: blue;
+}
+
 @media screen {
     .media-queries .pourEcrans {
         display: block;
@@ -16,6 +26,11 @@
     }
 }
 
+
+
+
+
+
 /* Breakpoints */
 .breakpoint div { border: 3px solid red; }
 .breakpoint .small { border-color: green; display: none; }
@@ -26,7 +41,7 @@
     .breakpoint div { display: none; }
     .breakpoint .small { display: block; }
 }
-@media (min-width: 800px) {
+@media only screen and (min-width: 800px) {
     .breakpoint .small { display: none; }
     .breakpoint .medium { display: block; }
 }
